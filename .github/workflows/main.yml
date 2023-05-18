@@ -34,5 +34,4 @@ jobs:
         python -m flake8 
         cd infra_project/
         # запустить написанные разработчиком тесты
-        python manage.py runserver
         python manage.py test
