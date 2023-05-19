@@ -70,7 +70,7 @@ jobs:
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           
-          sudo docker pull torgov1/my-repository
+          sudo docker pull torgov1/my-repository:latest
           
           sudo docker stop $(sudo docker ps -a -q)
-          sudo docker run --rm -d -p 5000:5000 torgov1/my-repository 
+          sudo docker run --rm -d -p 5000:5000 torgov1/my-repository:latest
