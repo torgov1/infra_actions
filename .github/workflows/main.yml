@@ -71,6 +71,6 @@ jobs:
         script: |
           # Выполняет pull образа с DockerHub
           sudo docker pull torgov1/my-repository
-          #остановка всех контейнеров
+          
           sudo docker stop $(sudo docker ps -a -q)
           sudo docker run --rm -d -p 5000:5000 torgov1/my-repository 
